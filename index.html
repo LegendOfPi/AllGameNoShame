@@ -25,11 +25,23 @@
 <div id="main" style="width: 100%; height: 99%">
 <br>
 <div id="block" style="height: 5%; width: 30%;">
-<h1>Welcome, Gamer</h1>
+<h1>Welcome to IDK</h1>
 </div>
 <br>
 <br>
 <div id="center" style="height: 80%; width: 40%;">
+<br>
+<h3>
+Hello there! I see you have found IDK. To use this media and gaming platform you can
+<button id="login" onclick="ToLogin();">Login</button>
+or if you do not have an account yet, feel free to
+<button id="signup" onclick="ToSignup();">Sign up</button>
+<br>
+<br>
+With IDK you can compare high scores, chat, and have a good time with you friends and family.
+</h3>
+
+
 
 </div>
 </div>
@@ -42,7 +54,7 @@ button {
 	color: white; 
 }
 #main {
-	background-image: "background.png";
+	background-image: url("background.png");
         background-repeat: repeat;
 	float: none;
 }
@@ -73,6 +85,12 @@ function ToProfile() { //On "Profile button"
 
 }
 function ToFriends() { //On "Friends button"
+
+}
+function ToLogin() { //On "Login button"
+
+}
+function ToSignup() { //On "Signup button"
 
 }
 </script>
