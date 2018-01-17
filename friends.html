@@ -1,0 +1,131 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Ruda" rel="stylesheet"> 
+</head>
+<body>
+<div id="nav" style="width: 20%; height: 99%">
+<center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button id="games" onclick="ToGames();" style="width: 40%; height: 5%">Games</button>
+<br>
+<br>
+<button id="profile" onclick="ToProfile();" style="width: 40%; height: 5%">Profile</button>
+<br>
+<br>
+<button id="friends" onclick="ToFriends();" style="width: 40%; height: 5%">Friends</button>
+<br>
+</center>
+</div>
+
+<div id="right" style="width: 20%; height: 99%">
+<center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="block" style="height: 5%; width: 70%">
+<h1>
+Search
+</h1>
+<br>
+<br>
+<input id="search" value="Username"></input>
+<br>
+<button id="searchB">Search for User</button>
+</div>
+</center>
+</div>
+
+<center>
+<div id="main" style="width: 100%; height: 99%">
+<br>
+<div id="block" style="height: 5%; width: 30%;">
+<h1>My Friends</h1>
+</div>
+<br>
+<br>
+<div id="center" style="height: 80%; width: 40%;">
+<br>
+<h3>
+<center> <!---Do not show the following unless user is logged in--->
+<div id="friend" style="height: 22%; width: 20%;"> <!---need a friend div for each friend--->
+<br>
+<img src="background.png" style="width: 50%; height: 40%"> <!---src is profile pic--->
+<h5>
+Friend name
+<button id="chat">Chat</button> <!---Start an IM style thing... Going to need help on this one--->
+</h5>
+</div>
+</center>
+</h3>
+</div>
+</div>
+</center>
+
+
+
+</html>
+<style>
+button {
+	background-color: #2A2722;
+	font-family: 'Ruda', sans-serif;
+	color: white; 
+}
+#main {
+	background-image: url("background.png");
+        background-repeat: repeat;
+	float: none;
+}
+#main h1 {
+	
+}
+#nav {
+	float: left;
+	background-color: #59595B;
+}
+#right {
+	float: right;
+	background-color: #59595B;
+}
+#block {
+	background-color: #EFF0F2;
+        box-shadow: 10px 10px grey;	
+}
+#center {
+	background-color: #59595B;
+        box-shadow: 10px 10px grey;	
+}
+body {
+	font-family: 'Ruda', sans-serif;
+}
+#friend {
+	background-color: #EFF0F2;
+}
+</style>
+<script>
+function ToHighScores() { //On "High Scores button"
+
+}
+function ToGames() { //On "Games button"
+	window.location.href = "/Media/games.html";
+}
+function ToProfile() { //On "Profile button"
+	window.location.href = "/Media/profile.html";
+}
+function ToFriends() { //On "Friends button"
+	window.location.href = "/Media/friends.html";
+}
+function ToLogin() { //On "Login button"
+	window.location.href = "/Media/login.html";
+}
+function ToSignup() { //On "Signup button"
+	window.location.href = "/Media/signup.html"
+}
+</script>
